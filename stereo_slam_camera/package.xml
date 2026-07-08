@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package format="3">
+ <name>dynamic_stereo_slam_camera</name>
+
+  <version>0.0.1</version>
+  <description>ROS2 stereo ORB-SLAM3 camera node with YOLO dynamic mask suppression.</description>
+
+  <maintainer email="user@example.com">user</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>rclcpp</depend>
+  <depend>sensor_msgs</depend>
+  <depend>cv_bridge</depend>
+  <depend>message_filters</depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
+

@@ -1,0 +1,88 @@
+%YAML:1.0
+
+File.version: "1.0"
+
+#--------------------------------------------------------------------------------------------
+# Camera Parameters
+#--------------------------------------------------------------------------------------------
+
+Camera.type: "PinHole"
+
+# Left camera, rectified
+Camera1.fx: 629.0947625734735
+Camera1.fy: 629.0947625734735
+Camera1.cx: 181.05555534362793
+Camera1.cy: 238.4998321533203
+
+Camera1.k1: 0.0
+Camera1.k2: 0.0
+Camera1.p1: 0.0
+Camera1.p2: 0.0
+Camera1.k3: 0.0
+
+# Right camera, rectified
+Camera2.fx: 629.0947625734735
+Camera2.fy: 629.0947625734735
+Camera2.cx: 181.05555534362793
+Camera2.cy: 238.4998321533203
+
+Camera2.k1: 0.0
+Camera2.k2: 0.0
+Camera2.p1: 0.0
+Camera2.p2: 0.0
+Camera2.k3: 0.0
+
+Camera.width: 640
+Camera.height: 480
+
+Camera.fps: 30
+Camera.RGB: 0
+
+# bf = fx * baseline
+# bf from right projection matrix P[0,3]
+Camera.bf: 37.34883898860862
+
+#--------------------------------------------------------------------------------------------
+# Stereo Extrinsics
+#--------------------------------------------------------------------------------------------
+
+Stereo.T_c1_c2: !!opencv-matrix
+  rows: 4
+  cols: 4
+  dt: f
+  data: [1.0, 0.0, 0.0, -0.05937,
+         0.0, 1.0, 0.0,  0.0,
+         0.0, 0.0, 1.0,  0.0,
+         0.0, 0.0, 0.0,  1.0]
+
+#--------------------------------------------------------------------------------------------
+# Stereo Parameters
+#--------------------------------------------------------------------------------------------
+
+Stereo.ThDepth: 40.0
+
+#--------------------------------------------------------------------------------------------
+# ORB Parameters
+#--------------------------------------------------------------------------------------------
+
+ORBextractor.nFeatures: 1200
+ORBextractor.scaleFactor: 1.2
+ORBextractor.nLevels: 8
+ORBextractor.iniThFAST: 20
+ORBextractor.minThFAST: 7
+
+#--------------------------------------------------------------------------------------------
+# Viewer Parameters
+#--------------------------------------------------------------------------------------------
+
+Viewer.KeyFrameSize: 0.05
+Viewer.KeyFrameLineWidth: 1.0
+Viewer.GraphLineWidth: 0.9
+Viewer.PointSize: 2.0
+Viewer.CameraSize: 0.08
+Viewer.CameraLineWidth: 3.0
+Viewer.ViewpointX: 0.0
+Viewer.ViewpointY: -0.7
+Viewer.ViewpointZ: -1.8
+Viewer.ViewpointF: 500.0
+
